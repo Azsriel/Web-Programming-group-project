@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My E-commerce Website</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a6bce9; 
+    color: #333;
+    font-weight: 600; /* Increased font weight */
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #afababf3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .category {
+    margin-bottom: 40px;
+  }
+
+  .category h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product .item {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+
+  .product .item:hover {
+    transform: translateY(-5px);
+  }
+
+  .product .item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .product .item:hover img {
+    transform: scale(1.1);
+  }
+
+  .product .item h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #817e7e;
+  }
+
+  .product .item p {
+    margin-bottom: 10px;
+    color: #777;
+  }
+
+  /* Go Back button */
+  .goback-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .goback-btn button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .goback-btn button:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My E-commerce Website</h1>
+</header>
+
+<nav>
+  <a href="#clothes">Clothes</a>
+  <a href="#smart-accessories">Smart Accessories</a>
+  <a href="#food">Food</a>
+  <a href="#">Home</a> 
+</nav>
+<div class="container" id="about">
+    <div class="category">
+      <h2 class="section-title">About Us</h2>
+      <div class="about-content">
+        <p>Welcome to our vibrant e-commerce platform, where shopping meets innovation! At our store, we're passionate about delivering exceptional products and an unforgettable shopping experience.</p>
+        <p>Explore our diverse selection of carefully curated items, ranging from stylish clothing and cutting-edge smart accessories to delectable gourmet foods. With each product handpicked for quality and style, we strive to exceed your expectations at every turn.</p>
+        <p>Driven by the latest technologies in web design, our platform offers seamless navigation and intuitive features, ensuring that you find exactly what you're looking for with ease.</p>
+      </div>
+    </div>
+  </div>
+  
+
+<div class="container" id="clothes">
+  <div class="category">
+    <h2>Clothes</h2>
+    <div class="product">
+      <!-- Add clothes products dynamically -->
+      <div class="item">
+        <img src="jeans.png" alt="Clothes 1">
+        <h3>Jeans</h3>
+        <p>₹2999</p>
+      </div>
+      <div class="item">
+        <img src="shirts.png" alt="Clothes 2">
+        <h3>Formal Shirt</h3>
+        <p>₹ 2999</p>
+      </div>
+      <div class="item">
+        <img src="sports.png" alt="Clothes 3">
+        <h3>Sportswear</h3>
+        <p>₹ 3999</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="smart-accessories">
+  <div class="category">
+    <h2>Smart Accessories</h2>
+    <div class="product">
+      <div class="item">
+        <img src="smartwatch.png" alt="Smart Accessories 1">
+        <h3>Smart Watch</h3>
+        <p>₹ 9999</p>
+      </div>
+      <div class="item">
+        <img src="earbuds.png" alt="Smart Accessories 2">
+        <h3>Wireless Earbuds</h3>
+        <p>₹ 7999</p>
+      </div>
+      <div class="item">
+        <img src="speaker.png" alt="Smart Accessories 3">
+        <h3>Bluetooth Speaker</h3>
+        <p>₹ 5999</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="food">
+  <div class="category">
+    <h2>Food</h2>
+    <div class="product">
+      <div class="item">
+        <img src="fruit.png" alt="Food 1">
+        <h3>Fresh Fruits Basket</h3>
+        <p>₹ 1999</p>
+      </div>
+      <div class="item">
+        <img src="healthy.png" alt="Food 2">
+        <h3>Healthy Snacks Pack</h3>
+        <p>₹ 1499</p>
+      </div>
+      <div class="item">
+        <img src="veg.png" alt="Food 3">
+        <h3>Organic Vegetables Box</h3>
+        <p>₹ 2499</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="goback-btn">
+  <button onclick="goBack()">Go Back</button>
+</div>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+</body>
+</html>
